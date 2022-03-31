@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 
 
 // import required modules
-import { EffectFade, Navigation, Pagination } from "swiper";
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
 import { CarrouselContainer } from "./styles";
 import Image from "next/image";
 
@@ -22,10 +22,14 @@ import Image from "next/image";
         spaceBetween={30}
         effect={"fade"}
         navigation={true}
+        autoplay={{
+          delay: 1200,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
-        modules={[EffectFade, Navigation, Pagination]}
+        modules={[EffectFade, Navigation, Pagination, Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -34,7 +38,12 @@ import Image from "next/image";
         <SwiperSlide>
           <Image src="/images/carrousel/2.png" alt="" layout="fill" />
         </SwiperSlide>
-       
+        <SwiperSlide>
+          <Image src="/images/carrousel/3.png" alt="" layout="fill" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src="/images/carrousel/4.png" alt="" layout="fill" />
+        </SwiperSlide>
       </Swiper>
     </CarrouselContainer>
   );
