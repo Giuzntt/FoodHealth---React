@@ -34,12 +34,7 @@ import Image from "next/image";
         <SwiperSlide>
           <Image src="/images/carrousel/2.png" alt="" layout="fill" />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image src="/images/carrousel/3.png" alt="" layout="fill" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src="/images/carrousel/4.png" alt="" layout="fill" />
-        </SwiperSlide>
+       
       </Swiper>
     </CarrouselContainer>
   );

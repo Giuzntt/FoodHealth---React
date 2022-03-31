@@ -10,7 +10,7 @@ const Layout = ({ children }: ILayoutProps) => {
     <>
       <AppBar  />
       {children}
-      {/* <Footer/> */}
+      
     </>
   );
 };
