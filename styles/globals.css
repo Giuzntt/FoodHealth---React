@@ -6,16 +6,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
+
 
 .swiper {
   width: 100%;
-  height: 100%;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
+  height: 300px;
 }
 
 .swiper-slide {
@@ -27,3 +24,7 @@
   display: block;
   width: 100%;
 }
+.conteudo{
+  width: 100%;
+}
+

@@ -15,7 +15,7 @@ export const CardContainer = styled.div`
 `;
 
 export const Card = styled.div`
-  margin: 60px 120px;
+  margin: 20px 120px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   width: 321px;
