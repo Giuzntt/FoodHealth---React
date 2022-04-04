@@ -1,8 +1,10 @@
 import { FaCarrot } from "react-icons/fa";
 import styled from "styled-components";
+import RecipeComponent from "../../components/RecipeComponent";
 
 
 const RecipeTitle = styled.h1`
+
   font-size: 2.5rem;
   letter-spacing: 0.3vw;
   font-weight: 600;
@@ -14,25 +16,8 @@ const RecipeTitle = styled.h1`
   padding: 20px 20px;
 `;
 
-const RecipesContainer = styled.div`
-  width: 100%;
-  margin-top: 15px;
 
-  
-`;
-const RecipeCard = styled.div`
-  display: block;
-  margin: auto;
-    width: 750px;
-    height: 250px;
-    background-color: #F4f4f4;
-  border-radius: 10px;
-  .image-card{
 
-      width: 50%;
-      height:90%;
-    }
-    `
   
 const HeaderRecipe = styled.div`
   display: flex;
@@ -48,37 +33,31 @@ const HeaderRecipe = styled.div`
   }
 `;
 
+const RecipesContainer = styled.div`
+ display: flex;
+ justify-content: center;
+ gap: 12rem;
+  align-items: center;
+ font-family: sans-serif;
+ margin-top: 80px;
+
+`;
+
 
 const Recipes = () => {
     return (
-<>      <HeaderRecipe>
-        <FaCarrot className="icon-carrot"/>
-        <RecipeTitle> Receitas</RecipeTitle>
+      <>
+       
+        <HeaderRecipe>
+          <FaCarrot className="icon-carrot" />
+          <RecipeTitle> Receitas</RecipeTitle>
         </HeaderRecipe>
-
-
         <RecipesContainer>
-            <RecipeCard>
-               {/* RECEBER API */
-                //requisitar uma api de receita
-                //renderizar a receita
-                //renderizar a imagem
-                //renderizar o nome da receita
-                //renderizar o tempo de preparo
-                //renderizar a quantidade de pessoas
-                //renderizar a categoria
-                //renderizar a descrição
-                //renderizar a quantidade de ingredientes
-                //renderizar os ingredientes
-                
-               }
-                
-            </RecipeCard>
-
+          <RecipeComponent />
+          <RecipeComponent />
+          <RecipeComponent />
         </RecipesContainer>
-</>
-        
-
+      </>
     );
 
 }
