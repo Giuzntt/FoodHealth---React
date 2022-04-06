@@ -1,6 +1,6 @@
 import { FaCarrot } from "react-icons/fa";
 import styled from "styled-components";
-import RecipeComponent from "../../components/RecipeComponent";
+import RecipeComponent from "../../components/RecipeCard";
 
 
 const RecipeTitle = styled.h1`

@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
-import AppBar from ".";
-import Footer from "../Footer";
+import AppBar from "./AppBar";
+import Footer from "./Footer";
+
 
 interface ILayoutProps {
   children: ReactNode;

@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
-import CardComponent from '../components/CardComponent';
-import CarrouselComponent from '../components/CarrouselComponent'
+import CardComponent from '../components/Card';
+import CarrouselComponent from '../components/Carrousel'
 
 
 

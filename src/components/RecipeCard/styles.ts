@@ -58,6 +58,7 @@ export const Card = styled.div<CardProps>`
       text-decoration: none;
       padding: 0.5em 1.25em;
       color: var(--clr-neutral-900);
+      font-weight: 600;
       background-color: var(--clr-accent-400);
       border-radius: 0.25em;
       text-transform: uppercase;
