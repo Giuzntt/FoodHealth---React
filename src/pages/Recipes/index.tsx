@@ -34,12 +34,16 @@ const HeaderRecipe = styled.div`
 `;
 
 const RecipesContainer = styled.div`
+max-width: 1400px;
+  margin: 80px auto 80px auto;
  display: flex;
+ flex-wrap: wrap;
+ width: 100%;
  justify-content: center;
- gap: 12rem;
-  align-items: center;
+ align-items: center;
+ gap: 2rem;
  font-family: sans-serif;
- margin-top: 80px;
+
 
 `;
 
@@ -47,15 +51,17 @@ const RecipesContainer = styled.div`
 const Recipes = () => {
     return (
       <>
-       
         <HeaderRecipe>
           <FaCarrot className="icon-carrot" />
           <RecipeTitle> Receitas</RecipeTitle>
         </HeaderRecipe>
+        
         <RecipesContainer>
           <RecipeComponent />
           <RecipeComponent />
           <RecipeComponent />
+          <RecipeComponent />
+          
         </RecipesContainer>
       </>
     );

@@ -5,8 +5,11 @@ interface CardProps{
 }
 
 export const Card = styled.div<CardProps>`
-  //usar variaveis no css
-
+  //usar variaveis no cs
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
   color: var(--clr-neutral-100);
   background-image: url(${(props) => props.backgroundImage});
   background-size: cover;

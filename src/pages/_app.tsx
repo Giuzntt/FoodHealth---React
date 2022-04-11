@@ -4,7 +4,8 @@ import  "../../public/styles/globals.css";
 import "swiper/css/bundle";
 
 import { GlobalStyles } from '../../public/styles/globalStyle';
-import Layout from '../components/Navigation/Layout';
+import Layout from '../Layouts';
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

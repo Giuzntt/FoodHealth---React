@@ -6,8 +6,7 @@ interface FooterContainerProps {
 }
 
 export const FooterContainer = styled.footer<FooterContainerProps>`
-  position: absolute;
-  bottom: 0;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +14,7 @@ export const FooterContainer = styled.footer<FooterContainerProps>`
   height: 20vh;
   background: url(${(props) => props.backgroundImage});
   background-size: cover;
-
+  
   .footer-text {
     display: flex;
     align-items: center;
