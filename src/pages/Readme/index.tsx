@@ -1,5 +1,6 @@
 import Image from "next/image"
 import styled from "styled-components"
+import CarrouselComponent from "../../components/Carrousel";
 
 interface ReadMeContentProps {
     backgroundImage: string
@@ -34,16 +35,33 @@ const ReadMeContainer = styled.div<ReadMeContentProps>`
     padding: 0;
     font-family: "Poppins", sans-serif;
   }
-  .decription  {
+  .decription {
     color: #fff;
     //font poppins
     font-family: "Poppins", sans-serif;
-    font-size: 1.5ch;
+    font-size: 2.5ch;
     width: 300px;
-    margin: auto;
+    margin: 20px auto;
     text-align: center;
     font-weight: bold;
     text-justify: distribute;
+
+    a {
+      display: grid;
+      margin: 20px 20px;
+      text-decoration: none;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+
+      :hover {
+        color: #8dff5c;
+        transition: 0.2s;
+        transform: scaleX(1.05);
+      }
+    }
   }
 `;
 
@@ -63,9 +81,18 @@ const ReadmePage = () => {
           <h1 className="readme-title">Giulianno Zanetti</h1>
           <div className="decription">
            <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus neque fuga quod magni esse illum aperiam commodi soluta! Deleniti ex rerum repudiandae veniam voluptatibus quidem sint facere tempore quam dignissimos!
+           Projetos desenvolvidos:
            </p>
+          
+            <a href="">
+              Ocean App
+            </a>
+            <a href="">
+              Food Health Kotlin
+            </a>
           </div>
+          
+
       </ReadMeContainer>
     );
 
